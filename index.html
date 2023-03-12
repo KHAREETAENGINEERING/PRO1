@@ -115,25 +115,25 @@
         function pop_plooots_2(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
-                        <td colspan="2"><strong>المساحة</strong><br />' + (feature.properties['Shape_Area'] !== null ? autolinker.link(feature.properties['Shape_Area'].toLocaleString()) : '') + '</td>\
+                        <td colspan="2"><hr><strong>المساحة</strong><br />' + (feature.properties['Shape_Area'] !== null ? autolinker.link(feature.properties['Shape_Area'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2"><strong>الرقم المؤقت</strong><br />' + (feature.properties['NO1'] !== null ? autolinker.link(feature.properties['NO1'].toLocaleString()) : '') + '</td>\
+                        <td colspan="2"><hr><strong>الرقم المؤقت</strong><br />' + (feature.properties['NO1'] !== null ? autolinker.link(feature.properties['NO1'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2"><strong>الرقم النهائي</strong><br />' + (feature.properties['NO2'] !== null ? autolinker.link(feature.properties['NO2'].toLocaleString()) : '') + '</td>\
+                        <td colspan="2"><hr><strong>الرقم النهائي</strong><br />' + (feature.properties['NO2'] !== null ? autolinker.link(feature.properties['NO2'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2"><strong>المالك</strong><br />' + (feature.properties['OWNER'] !== null ? autolinker.link(feature.properties['OWNER'].toLocaleString()) : '') + '</td>\
+                        <td colspan="2"><hr><strong>المالك</strong><br />' + (feature.properties['OWNER'] !== null ? autolinker.link(feature.properties['OWNER'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2"><strong>الهاتف</strong><br />' + (feature.properties['PHONE'] !== null ? autolinker.link(feature.properties['PHONE'].toLocaleString()) : '') + '</td>\
+                        <td colspan="2"><hr><strong>الهاتف</strong><br />' + (feature.properties['PHONE'] !== null ? autolinker.link(feature.properties['PHONE'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2"><strong>التنظيم</strong><br />' + (feature.properties['TANTHEM'] !== null ? autolinker.link(feature.properties['TANTHEM'].toLocaleString()) : '') + '</td>\
+                        <td colspan="2"><hr><strong>التنظيم</strong><br />' + (feature.properties['TANTHEM'] !== null ? autolinker.link(feature.properties['TANTHEM'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2"><strong>التاريخ</strong><br />' + (feature.properties['DATE'] !== null ? autolinker.link(feature.properties['DATE'].toLocaleString()) : '') + '</td>\
+                        <td colspan="2"><hr><strong>التاريخ</strong><br />' + (feature.properties['DATE'] !== null ? autolinker.link(feature.properties['DATE'].toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
